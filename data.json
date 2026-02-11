@@ -24,11 +24,11 @@
       "location": "Stockholm, Sweden · Remote",
       "period": "Dec 2023 — Present",
       "achievements": [
-        "Achieved SOC 2, PCI DSS, ISO 27001, and DORA compliance — all on time, zero audit observations",
-        "Built corporate IT function from scratch for 300+ employees and 600+ contractors globally",
+        "Achieved SOC 2, PCI DSS, ISO 27001, and DORA compliance — unlocking business customer segment and enabling regulatory approvals — all on time, zero audit observations",
+        "Built corporate IT function from scratch for 300+ employees and 600+ contractors globally, maintaining 98+ NPS with lean 2-person team",
+        "Reduced cyber insurance premiums by 20% through implementation of robust security controls and zero-breach track record",
         "Implemented zero-trust security architecture with MFA across all systems and SSO/SCIM where supported",
-        "Secured cloud-native AWS infrastructure and integrated DevSecOps into engineering workflow",
-        "Conduct annual incident response, business continuity, and disaster recovery tests with documented improvement tracking"
+        "Secured cloud-native AWS infrastructure and integrated DevSecOps into engineering workflow"
       ],
       "scope": [
         "Define and execute information security strategy and program",
