@@ -138,19 +138,31 @@ function populateCV(data) {
                 <div class="skill-tags">${data.skills.compliance.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
             </div>
             <div>
-                <h3>Technical</h3>
-                <div class="skill-tags">${data.skills.technical.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
+                <h3>Cloud & Infrastructure</h3>
+                <div class="skill-tags">${data.skills.cloud.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
             </div>
             <div>
-                <h3>Frameworks & Processes</h3>
-                <div class="skill-tags">${data.skills.frameworks.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
+                <h3>Security Operations & Testing</h3>
+                <div class="skill-tags">${data.skills.operations.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
             </div>
             <div>
-                <h3>Specializations</h3>
-                <div class="skill-tags">${data.skills.specializations.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
+                <h3>Governance, Risk & Compliance (GRC)</h3>
+                <div class="skill-tags">${data.skills.grc.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
             </div>
             <div>
-                <h3>Leadership</h3>
+                <h3>Application & Data Security</h3>
+                <div class="skill-tags">${data.skills.appsec.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
+            </div>
+            <div>
+                <h3>Identity & Access Management</h3>
+                <div class="skill-tags">${data.skills.identity.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
+            </div>
+            <div>
+                <h3>Business Resilience</h3>
+                <div class="skill-tags">${data.skills.resilience.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
+            </div>
+            <div>
+                <h3>Leadership & Communication</h3>
                 <div class="skill-tags">${data.skills.leadership.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
             </div>
         `;
