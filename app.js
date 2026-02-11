@@ -43,6 +43,16 @@ function populateCV(data) {
         window.print();
     });
 
+    // Career Highlights
+    const highlightsBox = document.querySelector('.highlights-box');
+    if (highlightsBox && data.highlights) {
+        highlightsBox.innerHTML = `
+            <ul>
+                ${data.highlights.map(h => `<li>${h}</li>`).join('')}
+            </ul>
+        `;
+    }
+
     // Experience
     const expSection = document.querySelector('#experience');
     const expContainer = document.createElement('div');

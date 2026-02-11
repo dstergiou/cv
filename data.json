@@ -11,6 +11,12 @@
     "linkedinUrl": "https://linkedin.com/in/dstergiou",
     "cvPdf": "Dimitrios_Stergiou_CV.pdf"
   },
+  "highlights": [
+    "Zero security breaches across 25+ year career spanning 8 organizations",
+    "72+ regulatory audits passed with zero major findings",
+    "Led GDPR compliance across 30+ companies throughout Europe",
+    "Achieved 4 compliance frameworks simultaneously (SOC 2, ISO 27001, PCI DSS, DORA) on schedule with zero observations"
+  ],
   "experience": [
     {
       "company": "TapTap Send",
