@@ -65,10 +65,13 @@ function populateCV(data) {
         const scopeList = exp.scope.map(s => `<li>${s}</li>`).join('');
         const tags = exp.tags.map(t => `<span class="exp-tag">${t}</span>`).join('');
 
+        const companyContext = exp.companyContext ? `<div class="exp-context">${exp.companyContext}</div>` : '';
+
         expItem.innerHTML = `
             <div class="exp-header">
                 <div>
                     <div class="exp-title"><span class="exp-company">${exp.company}</span> — ${exp.role}</div>
+                    ${companyContext}
                     <div class="exp-location">${exp.location}</div>
                 </div>
                 <div class="exp-period">${exp.period}</div>

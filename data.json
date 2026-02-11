@@ -20,6 +20,7 @@
   "experience": [
     {
       "company": "TapTap Send",
+      "companyContext": "International money transfer fintech operating in 50+ countries",
       "role": "CISO & Director of Corporate IT",
       "location": "Stockholm, Sweden · Remote",
       "period": "Dec 2023 — Present",
@@ -53,6 +54,7 @@
     },
     {
       "company": "Wayflyer",
+      "companyContext": "Revenue-based financing fintech, $150M+ raised, serving e-commerce businesses globally",
       "role": "Director of Information Security",
       "location": "Stockholm, Sweden · Remote",
       "period": "Sep 2022 — Dec 2023",
@@ -82,6 +84,7 @@
     },
     {
       "company": "Trustly Group",
+      "companyContext": "Leading European open banking payment provider operating in 30+ countries",
       "role": "Group CISO",
       "location": "Stockholm, Sweden · Hybrid",
       "period": "Aug 2018 — Aug 2022",
@@ -111,6 +114,7 @@
     },
     {
       "company": "Modern Times Group",
+      "companyContext": "Publicly traded media and entertainment conglomerate with 30+ subsidiaries",
       "role": "Group CISO",
       "location": "Stockholm, Sweden",
       "period": "Feb 2017 — Aug 2018",
@@ -138,6 +142,7 @@
     },
     {
       "company": "NetEnt",
+      "companyContext": "Leading B2B online gaming provider, publicly traded (acquired by Evolution Gaming)",
       "role": "CISO",
       "location": "Stockholm, Sweden",
       "period": "Jan 2011 — Feb 2017",
@@ -164,6 +169,7 @@
     },
     {
       "company": "Entraction AB",
+      "companyContext": "White-label online gaming platform provider",
       "role": "CISO",
       "location": "Stockholm, Sweden",
       "period": "Feb 2009 — Nov 2010",
@@ -185,6 +191,7 @@
     },
     {
       "company": "Innova S.A.",
+      "companyContext": "Information security consulting firm serving telecom and banking sectors",
       "role": "Senior InfoSec Consultant",
       "location": "Athens, Greece",
       "period": "Nov 2006 — Jan 2009",
@@ -209,6 +216,7 @@
     },
     {
       "company": "Intracom Telecom",
+      "companyContext": "Telecommunications equipment manufacturer with international operations",
       "role": "Senior Security Engineer",
       "location": "Athens, Greece",
       "period": "Apr 1999 — Oct 2005",
