@@ -3,8 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dstergiou — CISO</title>
-    <meta name="description" content="Dimitrios Stergiou — Security executive with 25+ years building compliance-driven security programs.">
+    <title>Dimitrios Stergiou — CISO | Chief Information Security Officer</title>
+    <meta name="description" content="Dimitrios Stergiou — Chief Information Security Officer (CISO) with 25+ years building compliance-driven security programs across fintech and payments. Expert in SOC 2, ISO 27001, PCI DSS, GDPR, and DORA compliance.">
+    <meta name="keywords" content="CISO, Chief Information Security Officer, Information Security, Cybersecurity, SOC 2, ISO 27001, PCI DSS, GDPR, DORA, DevSecOps, Fintech Security, CISSP, CISM, CISA, Stockholm">
+    <meta name="author" content="Dimitrios Stergiou">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dimitrios Stergiou — Chief Information Security Officer (CISO)">
+    <meta property="og:description" content="Security executive with 25+ years building compliance-driven security programs across fintech and payments. Expert in SOC 2, ISO 27001, PCI DSS, GDPR, and DORA compliance.">
+    <meta property="og:url" content="https://dstergiou.github.io/cv">
+    <meta property="og:site_name" content="Dimitrios Stergiou CV">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Dimitrios Stergiou — CISO">
+    <meta name="twitter:description" content="Security executive with 25+ years building compliance-driven security programs across fintech and payments.">
+
+    <!-- Additional SEO -->
+    <link rel="canonical" href="https://dstergiou.github.io/cv">
+    <meta name="robots" content="index, follow">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -375,6 +394,22 @@
         }
         .extras li span { color: var(--text-dimmer); }
 
+        /* SKILLS */
+        #skills .extras { grid-template-columns: 1fr; gap: 2rem; }
+        .skill-tags {
+            display: flex; flex-wrap: wrap; gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .skill-tag {
+            font-size: 0.82rem;
+            padding: 0.4rem 0.8rem;
+            background: var(--bg-raised);
+            color: var(--text-dim);
+            border: 1px solid var(--border);
+            transition: all 0.15s;
+        }
+        .skill-tag:hover { border-color: var(--green); color: var(--green); }
+
         /* FOOTER */
         footer {
             padding: 3rem 2rem;
@@ -427,16 +462,97 @@
 
         /* PRINT STYLES */
         @media print {
+            @page {
+                margin: 0.75in;
+                @bottom-right {
+                    content: counter(page) " / " counter(pages);
+                    font-size: 10px;
+                    color: #666;
+                }
+            }
+
             body::after { display: none; }
             nav, .nav-toggle, .hero-actions { display: none; }
-            .hero { min-height: auto; padding: 2rem 0 1rem; }
-            section { padding: 2rem 0; page-break-inside: avoid; }
-            .exp-item { page-break-inside: avoid; }
+            .hero { min-height: auto; padding: 1.5rem 0 1rem; page-break-after: avoid; }
+            section { padding: 1.5rem 0; page-break-inside: avoid; }
+            .exp-item { page-break-inside: avoid; margin-bottom: 1.5rem; }
+            .section-head { page-break-after: avoid; }
             .reveal { opacity: 1 !important; transform: none !important; }
-            body { background: white; color: black; }
-            .hero h1, .exp-company, .btn-green { color: #2d7a4f; }
-            .exp-tag { background: #e8f5e9; color: #2d7a4f; }
-            a { color: inherit; text-decoration: none; }
+
+            /* Page header on page 2+ */
+            body::before {
+                content: "Dimitrios Stergiou — CISO | dstergiou@gmail.com";
+                position: fixed;
+                top: 0.25in;
+                left: 0.75in;
+                right: 0.75in;
+                font-size: 9px;
+                color: #999;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 0.15in;
+                display: none;
+            }
+
+            body { counter-reset: page; }
+
+            /* Heavier fonts for print */
+            body { font-weight: 500 !important; }
+            .hero h1 { font-weight: 700 !important; }
+            .section-head h2 { font-weight: 600 !important; }
+            .exp-title, .edu-title { font-weight: 600 !important; }
+            .extras h3 { font-weight: 600 !important; }
+            .extras li { font-weight: 500 !important; }
+
+            /* Color fixes */
+            body { background: white !important; color: #000 !important; }
+            .hero h1 { color: #000 !important; }
+            .hero h1 .accent { color: #2d7a4f !important; }
+            .hero-bio, .hero-bio .hl { color: #333 !important; }
+            .exp-company { color: #2d7a4f !important; }
+            .btn-green { color: #2d7a4f !important; }
+
+            /* Hero info box - remove dark background */
+            .hero-info {
+                background: transparent !important;
+                border: 1px solid #ddd !important;
+                border-left: 3px solid #2d7a4f !important;
+            }
+            .hero-info a, .hero-info span { color: #333 !important; }
+            .hero-info .label { color: #666 !important; }
+
+            /* Speaking table - make all text visible */
+            .speak-table td { color: #000 !important; }
+            .speak-table .col-year { color: #666 !important; }
+            .speak-table .col-type { color: #2d7a4f !important; }
+            .speak-table .col-title { color: #000 !important; }
+            .speak-table .col-title span { color: #666 !important; }
+
+            /* Experience tags */
+            .exp-tag { background: #e8f5e9 !important; color: #2d7a4f !important; border-color: #2d7a4f !important; }
+
+            /* Certifications - make badges visible */
+            .cert-badge {
+                background: white !important;
+                border: 1px solid #333 !important;
+                color: #000 !important;
+            }
+            .cert-badge strong { color: #000 !important; font-weight: 600 !important; }
+
+            /* Skills - make tags visible */
+            .skill-tag {
+                background: white !important;
+                border: 1px solid #666 !important;
+                color: #000 !important;
+                font-weight: 500 !important;
+            }
+
+            /* General text visibility */
+            .exp-title, .exp-location, .exp-period { color: #000 !important; }
+            .exp-achievements li, .exp-scope li { color: #333 !important; }
+            .edu-title, .edu-sub, .edu-year { color: #000 !important; }
+            .cert-label { color: #666 !important; }
+
+            a { color: inherit !important; text-decoration: none !important; }
         }
     </style>
 </head>
@@ -479,7 +595,12 @@
         <div class="section-head reveal"><h2 data-num="04">Certifications</h2></div>
     </section>
 
-    <section>
+    <section id="skills">
+        <div class="section-head reveal"><h2 data-num="05">Skills & Expertise</h2></div>
+        <div class="extras reveal"></div>
+    </section>
+
+    <section id="extras">
         <div class="extras reveal"></div>
     </section>
 

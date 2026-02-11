@@ -4,7 +4,7 @@
     "firstName": "Dimitrios",
     "lastName": "Stergiou",
     "title": "CISO",
-    "bio": "Security executive with <span class=\"hl\">25+ years</span> building compliance-driven security programs across <span class=\"hl\">fintech</span> and <span class=\"hl\">payments</span>. Hands-on technical depth meets board-level communication. I get things certified, secured, and shipped.",
+    "bio": "CISO with <span class=\"hl\">25+ years</span> delivering <span class=\"hl\">zero-breach security programs</span> across <span class=\"hl\">fintech</span> and <span class=\"hl\">payments</span>. Proven track record: <span class=\"hl\">SOC 2, PCI DSS, ISO 27001, DORA</span> compliance achieved on time with zero audit observations. I build security programs that <span class=\"hl\">survive audits and enable business growth</span>.",
     "location": "Stockholm, Sweden",
     "email": "dstergiou@gmail.com",
     "linkedin": "dstergiou",
@@ -21,16 +21,18 @@
         "Achieved SOC 2, PCI DSS, ISO 27001, and DORA compliance — all on time, zero audit observations",
         "Built corporate IT function from scratch for 300+ employees and 600+ contractors globally",
         "Designed and implemented enterprise-wide information security strategy and risk management framework",
-        "Secured cloud-native AWS infrastructure and integrated DevSecOps into engineering workflow"
+        "Secured cloud-native AWS infrastructure and integrated DevSecOps into engineering workflow",
+        "Conduct annual incident response, business continuity, and disaster recovery tests with documented improvement tracking"
       ],
       "scope": [
+        "Define and execute information security strategy and program",
         "Manage Corporate IT department providing remote support across all global locations",
-        "Create and operate information security risk management system (ISO 27001, SOC 2, PCI DSS)",
-        "Oversee security event monitoring, incident response solutions and processes",
-        "Drive business continuity and disaster recovery planning and testing",
-        "Translate technology and business risk requirements into systems and metrics for measuring them",
-        "Implement technical controls for DORA and GDPR / Privacy regulations",
-        "Manage third party vendors offering services to Corporate IT"
+        "Develop and operate information security risk management framework",
+        "Develop and operate security incident response framework",
+        "Implement DevSecOps and secure SDLC",
+        "Develop and maintain business continuity and disaster recovery plans",
+        "Ensure compliance with information security and privacy regulations (DORA, GDPR, PCI DSS, SOC 2, ISO 27001)",
+        "Manage third-party vendor relationships for IT and security services"
       ],
       "tags": [
         "SOC 2",
@@ -55,11 +57,12 @@
         "Managed team of 4 external security consultants alongside internal stakeholders"
       ],
       "scope": [
-        "Define and develop information security risk management strategy aligned with business objectives",
-        "Demonstrate InfoSec competence to partners, board, and investors through accreditation (SOC 2, PCI DSS)",
-        "Define and embed information security policy framework for customers, teammates, investors, and partners",
-        "Direct investigations into security incidents, liaising with regulatory bodies and ensuring root cause analysis",
-        "Promote an information security-aware culture across the organization"
+        "Define and execute information security strategy and program",
+        "Develop and operate information security risk management framework",
+        "Develop and operate security incident response framework",
+        "Implement DevSecOps and secure SDLC with preventative security controls",
+        "Ensure compliance with information security and privacy regulations (SOC 2, PCI DSS, GDPR)",
+        "Manage team of 4 external security consultants"
       ],
       "tags": [
         "SOC 2",
@@ -81,18 +84,15 @@
         "Led M&A security due diligence for acquisitions, ensuring professional risk assessment and integration"
       ],
       "scope": [
-        "Responsible for compliance with information security and privacy laws",
-        "Managing and executing external third-party audits",
-        "Create and operate the information security risk management framework",
-        "Create and operate the security incident response framework",
-        "Development of information security policies, procedures, and guidelines",
-        "Development and ownership of internal information and product security roadmap",
-        "Spokesperson for all information security aspects towards customers, regulators, and press",
-        "Supplier relationship management for IT-related products and services",
-        "Guidance and participation in the M&A process",
-        "Develop and deliver the information security awareness program",
-        "Develop and manage the information security budget",
-        "Manage the information security team (direct and dotted lines)"
+        "Define and execute information security strategy and program",
+        "Develop and operate information security risk management framework",
+        "Develop and operate security incident response framework",
+        "Implement DevSecOps and secure SDLC",
+        "Ensure compliance with information security and privacy regulations (ISO 27001, ISO 27701, GDPR, PSD2)",
+        "Manage third-party vendor relationships for IT and security services",
+        "Lead M&A security due diligence and integration for acquisitions",
+        "Serve as spokesperson for information security to customers, regulators, and industry",
+        "Manage information security team (2 direct reports, 5 indirect reports)"
       ],
       "tags": [
         "ISO 27001",
@@ -108,22 +108,19 @@
       "location": "Stockholm, Sweden",
       "period": "Feb 2017 — Aug 2018",
       "achievements": [
-        "Zero security incidents over 18 months across 30 indirect reports and multiple subsidiaries",
-        "Co-led Group-wide GDPR compliance project across all subsidiaries",
-        "Established security maturity models and roadmap for continual program improvement",
-        "Operated a network of 30+ Security Champions / indirect reports"
+        "Zero security incidents over 18 months across 30+ subsidiaries and multiple indirect reports",
+        "Conducted CMMC-based maturity assessment across 30+ subsidiaries and created tailored security programs for each",
+        "Co-led Group-wide GDPR compliance project across 30+ companies in Europe with Privacy Champions network",
+        "Established and mentored Security Champions network of 30+ professionals across all subsidiaries"
       ],
       "scope": [
-        "Provide guidance and counsel to CSO, CIO, and executive team on information security objectives",
-        "Together with the Group DPO, lead the GDPR project aligning with InfoSec governance framework",
-        "Manage Group-wide information security governance, coordinate InfoSec Operations Committee",
-        "Lead Information Security Liaisons in establishing program and project priorities",
-        "Establish annual and long-range security and compliance goals, define strategies and metrics",
-        "Support and guidance in the M&A process ensuring professional assessment of InfoSec risk",
-        "Mentor Security Champions and IT Security Coordinator Network",
-        "Lead development of policies and practices to secure protected and sensitive data",
-        "Coordinate and track all IT and security-related audits",
-        "Create education and awareness programs across all entities"
+        "Define and execute information security strategy and program across 30+ subsidiaries",
+        "Develop and operate information security risk management framework",
+        "Implement DevSecOps and secure SDLC",
+        "Ensure compliance with information security and privacy regulations (GDPR)",
+        "Manage Group-wide information security governance and coordinate InfoSec Operations Committee",
+        "Provide strategic guidance to CSO, CIO, and executive team on information security objectives",
+        "Lead and mentor Security Champions network (30+ indirect reports across subsidiaries)"
       ],
       "tags": [
         "GDPR",
@@ -139,20 +136,17 @@
       "period": "Jan 2011 — Feb 2017",
       "achievements": [
         "Built and maintained ISO 27001 certification from scratch over 6-year tenure",
-        "Successfully passed 12+ regulatory audits annually across UKGC, AAMS, MGA, AGCC, CCC",
-        "Zero major security incidents throughout entire tenure"
+        "Successfully passed 72+ regulatory audits across UKGC, AAMS, MGA, AGCC, and CCC with zero incidents or breaches",
+        "Zero major security incidents throughout entire 6-year tenure"
       ],
       "scope": [
-        "Definition of the information security strategy",
-        "Responsible for information security budget",
-        "Design and documentation of information security policies",
-        "Design and implementation of risk management program",
-        "Design and implementation of security awareness program",
-        "Design and implementation of business continuity and disaster recovery plans",
-        "Design and implementation of SDLC",
-        "Design and implementation of PCI DSS framework",
-        "Organizing and running information security related audits",
-        "Internal and external information security consultancy"
+        "Define and execute information security strategy and program",
+        "Develop and operate information security risk management framework",
+        "Implement DevSecOps and secure SDLC",
+        "Develop and maintain business continuity and disaster recovery plans",
+        "Manage and coordinate 12+ annual regulatory audits across multiple gaming jurisdictions",
+        "Ensure compliance with information security and privacy regulations (ISO 27001, PCI DSS, UKGC, AAMS, MGA, AGCC, CCC)",
+        "Manage information security team (1 direct report)"
       ],
       "tags": [
         "ISO 27001",
@@ -171,15 +165,10 @@
         "Oversaw PCI DSS compliance and implemented SDLC across engineering teams"
       ],
       "scope": [
-        "Definition of the information security strategy",
-        "Responsible for information security budget",
-        "Overview PCI DSS compliance",
-        "Design and documentation of information security policies",
-        "Design and implementation of risk management program",
-        "Design and implementation of security awareness program",
-        "Design and implementation of SDLC",
-        "Organizing and running information security related audits",
-        "Internal and external information security consultancy"
+        "Define and execute information security strategy and program",
+        "Develop and operate information security risk management framework",
+        "Implement DevSecOps and secure SDLC",
+        "Ensure compliance with information security and privacy regulations (PCI DSS)"
       ],
       "tags": [
         "PCI DSS",
@@ -400,6 +389,13 @@
       "level": "conversational"
     }
   ],
+  "skills": {
+    "compliance": ["SOC 2", "ISO 27001", "ISO 27701", "PCI DSS", "DORA", "GDPR", "PSD2", "CMMC"],
+    "technical": ["AWS", "DevSecOps", "Secure SDLC", "Application Security", "Cloud Security"],
+    "frameworks": ["Risk Management", "Incident Response", "Business Continuity", "Disaster Recovery"],
+    "specializations": ["Fintech Security", "Payment Security", "Gaming Regulation (UKGC, AAMS, MGA, AGCC, CCC)", "M&A Due Diligence"],
+    "leadership": ["Security Program Development", "Team Building & Mentoring", "Executive Advisory", "Vendor Management"]
+  },
   "memberships": [
     "ISC2",
     "ISACA",

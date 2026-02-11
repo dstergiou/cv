@@ -129,20 +129,49 @@ function populateCV(data) {
 
     certSection.appendChild(certContainer);
 
+    // Skills
+    const skillsSection = document.querySelector('#skills .extras');
+    if (skillsSection && data.skills) {
+        skillsSection.innerHTML = `
+            <div>
+                <h3>Compliance & Regulatory</h3>
+                <div class="skill-tags">${data.skills.compliance.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
+            </div>
+            <div>
+                <h3>Technical</h3>
+                <div class="skill-tags">${data.skills.technical.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
+            </div>
+            <div>
+                <h3>Frameworks & Processes</h3>
+                <div class="skill-tags">${data.skills.frameworks.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
+            </div>
+            <div>
+                <h3>Specializations</h3>
+                <div class="skill-tags">${data.skills.specializations.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
+            </div>
+            <div>
+                <h3>Leadership</h3>
+                <div class="skill-tags">${data.skills.leadership.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
+            </div>
+        `;
+    }
+
     // Languages & Memberships
-    const extrasSection = document.querySelector('.extras');
-    extrasSection.innerHTML = `
-        <div>
-            <h3>Languages</h3>
-            <ul>
-                ${data.languages.map(l => `<li>${l.language} <span>— ${l.level}</span></li>`).join('')}
-            </ul>
-        </div>
-        <div>
-            <h3>Memberships</h3>
-            <ul>${data.memberships.map(m => `<li>${m}</li>`).join('')}</ul>
-        </div>
-    `;
+    const extrasSection = document.querySelector('#extras .extras');
+    if (extrasSection) {
+        extrasSection.innerHTML = `
+            <div>
+                <h3>Languages</h3>
+                <ul>
+                    ${data.languages.map(l => `<li>${l.language} <span>— ${l.level}</span></li>`).join('')}
+                </ul>
+            </div>
+            <div>
+                <h3>Memberships</h3>
+                <ul>${data.memberships.map(m => `<li>${m}</li>`).join('')}</ul>
+            </div>
+        `;
+    }
 
     // Footer
     document.querySelector('.footer-ascii').textContent = data.footer.tagline;
