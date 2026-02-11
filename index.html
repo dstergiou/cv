@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dstergiou — CISO</title>
+    <meta name="description" content="Dimitrios Stergiou — Security executive with 25+ years building compliance-driven security programs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --bg-raised: #111111;
+            --bg-hover: #181818;
+            --text: #f0f0f0;
+            --text-dim: #b8b8b8;
+            --text-dimmer: #707070;
+            --green: #4ade80;
+            --green-dim: rgba(74, 222, 128, 0.1);
+            --green-glow: rgba(74, 222, 128, 0.03);
+            --cyan: #67e8f9;
+            --yellow: #fde047;
+            --border: #1e1e1e;
+            --mono: 'JetBrains Mono', 'Fira Code', monospace;
+            --sans: 'Space Grotesk', sans-serif;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--mono);
+            background: var(--bg);
+            color: var(--text);
+            font-size: 14px;
+            line-height: 1.8;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection { background: var(--green); color: var(--bg); }
+
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            pointer-events: none;
+            z-index: 1000;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(0,0,0,0.03) 2px,
+                rgba(0,0,0,0.03) 4px
+            );
+        }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0; z-index: 100;
+            padding: 0.75rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 10, 10, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            font-size: 0.82rem;
+        }
+
+        .nav-logo {
+            color: var(--green);
+            font-weight: 500;
+        }
+        .nav-logo::before { content: '> '; color: var(--text-dimmer); }
+
+        .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+        .nav-links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+        .nav-links a:hover { color: var(--green); }
+        .nav-links a::before { content: './'; color: var(--text-dimmer); }
+
+        .nav-toggle {
+            display: none; background: none; border: none;
+            color: var(--green); font-size: 1.2rem; cursor: pointer;
+            font-family: var(--mono);
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 6rem 2rem 4rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-content { width: 100%; }
+
+        .hero-prompt {
+            color: var(--text-dimmer);
+            font-size: 0.82rem;
+            margin-bottom: 0.5rem;
+            opacity: 0; animation: fadeIn 0.4s ease forwards 0.2s;
+        }
+
+        .hero h1 {
+            font-family: var(--sans);
+            font-size: clamp(2.8rem, 7vw, 4.5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+            opacity: 0; animation: fadeIn 0.5s ease forwards 0.4s;
+        }
+        .hero h1 .accent { color: var(--green); }
+
+        .hero-bio {
+            font-size: 0.95rem;
+            color: var(--text-dim);
+            max-width: 600px;
+            margin-bottom: 2rem;
+            opacity: 0; animation: fadeIn 0.5s ease forwards 0.6s;
+        }
+        .hero-bio .hl { color: var(--green); }
+
+        .hero-info {
+            display: flex; flex-wrap: wrap; gap: 1.5rem;
+            padding: 1.25rem;
+            background: var(--bg-raised);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--green);
+            margin-bottom: 2rem;
+            opacity: 0; animation: fadeIn 0.5s ease forwards 0.8s;
+        }
+        .hero-info a, .hero-info span {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.82rem;
+            transition: color 0.15s;
+        }
+        .hero-info a:hover { color: var(--green); }
+        .hero-info .label { color: var(--text-dimmer); margin-right: 0.3rem; }
+
+        .hero-actions {
+            display: flex; gap: 1rem; flex-wrap: wrap;
+            opacity: 0; animation: fadeIn 0.5s ease forwards 1s;
+        }
+
+        .btn {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.7rem 1.5rem;
+            font-family: var(--mono);
+            font-size: 0.8rem; font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s;
+            cursor: pointer;
+            background: none;
+        }
+        .btn svg { width: 14px; height: 14px; }
+
+        .btn-green {
+            background: var(--green); color: var(--bg);
+            border: 1px solid var(--green);
+        }
+        .btn-green:hover { background: transparent; color: var(--green); }
+
+        .btn-outline {
+            background: transparent; color: var(--text-dim);
+            border: 1px solid var(--border);
+        }
+        .btn-outline:hover { border-color: var(--green); color: var(--green); }
+
+        /* SECTIONS */
+        section {
+            padding: 5rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section-head {
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .section-head h2 {
+            font-family: var(--sans);
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        .section-head h2::before {
+            content: attr(data-num);
+            color: var(--green);
+            font-family: var(--mono);
+            font-size: 0.85rem;
+            font-weight: 400;
+            margin-right: 1rem;
+        }
+
+        /* EXPERIENCE */
+        .exp-item {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .exp-item:last-child { border-bottom: none; }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .exp-title {
+            font-family: var(--sans);
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        .exp-company { color: var(--green); }
+        .exp-period {
+            font-size: 0.8rem;
+            color: var(--text-dimmer);
+            white-space: nowrap;
+        }
+        .exp-location {
+            font-size: 0.82rem;
+            color: var(--text-dim);
+            margin-bottom: 1rem;
+        }
+
+        /* Achievements */
+        .exp-achievements {
+            list-style: none;
+            display: flex; flex-direction: column; gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+        .exp-achievements li {
+            padding-left: 1.75rem;
+            position: relative;
+            font-size: 0.88rem;
+            color: var(--text-dim);
+            line-height: 1.7;
+        }
+        .exp-achievements li::before {
+            content: '›';
+            position: absolute;
+            left: 0.5rem;
+            color: var(--green);
+            font-weight: 700;
+        }
+
+        /* Scope */
+        .exp-scope-label {
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-dimmer);
+            margin-bottom: 0.5rem;
+        }
+        .exp-scope-label::before {
+            content: '  ';
+        }
+
+        .exp-scope {
+            list-style: none;
+            display: flex; flex-direction: column; gap: 0.3rem;
+        }
+        .exp-scope li {
+            padding-left: 1.75rem;
+            position: relative;
+            font-size: 0.82rem;
+            color: var(--text-dimmer);
+            line-height: 1.65;
+        }
+        .exp-scope li::before {
+            content: '·';
+            position: absolute;
+            left: 0.65rem;
+            color: var(--text-dimmer);
+            font-weight: 700;
+        }
+
+        .exp-stack {
+            display: flex; flex-wrap: wrap; gap: 0.35rem;
+            margin-top: 1rem;
+        }
+        .exp-tag {
+            font-size: 0.72rem;
+            padding: 0.2rem 0.55rem;
+            background: var(--green-dim);
+            color: var(--green);
+            border: 1px solid rgba(74, 222, 128, 0.15);
+        }
+
+        /* SPEAKING */
+        .speak-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .speak-table tr {
+            border-bottom: 1px solid var(--border);
+            transition: background 0.15s;
+        }
+        .speak-table tr:hover { background: var(--bg-raised); }
+        .speak-table td {
+            padding: 0.85rem 0.5rem;
+            vertical-align: top;
+            font-size: 0.85rem;
+        }
+        .speak-table .col-year { width: 60px; color: var(--text-dimmer); }
+        .speak-table .col-type { width: 100px; color: var(--green); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        .speak-table .col-title { color: var(--text); }
+        .speak-table .col-title span { color: var(--text-dim); }
+
+        /* EDUCATION */
+        .edu-block {
+            display: flex; gap: 2rem; align-items: flex-start;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .edu-block:last-child { border-bottom: none; }
+        .edu-year { color: var(--text-dimmer); min-width: 110px; font-size: 0.85rem; }
+        .edu-title { font-family: var(--sans); font-size: 1.1rem; font-weight: 500; }
+        .edu-sub { font-size: 0.85rem; color: var(--text-dim); }
+
+        /* CERTS */
+        .cert-section { margin-bottom: 2rem; }
+        .cert-section:last-child { margin-bottom: 0; }
+        .cert-label {
+            font-size: 0.72rem;
+            color: var(--text-dimmer);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px dashed var(--border);
+        }
+        .cert-row {
+            display: flex; flex-wrap: wrap; gap: 0.4rem;
+        }
+        .cert-badge {
+            padding: 0.35rem 0.75rem;
+            border: 1px solid var(--border);
+            font-size: 0.82rem;
+            color: var(--text-dim);
+            transition: all 0.15s;
+        }
+        .cert-badge:hover { border-color: var(--green); color: var(--green); }
+        .cert-badge strong { color: var(--text); font-weight: 500; }
+
+        /* EXTRAS */
+        .extras {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;
+            padding: 3rem 0;
+        }
+        .extras h3 {
+            font-family: var(--sans);
+            font-size: 1rem; font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        .extras h3::before { content: '# '; color: var(--green); font-family: var(--mono); font-weight: 400; }
+        .extras ul { list-style: none; }
+        .extras li {
+            font-size: 0.88rem; color: var(--text-dim);
+            padding: 0.25rem 0;
+        }
+        .extras li span { color: var(--text-dimmer); }
+
+        /* FOOTER */
+        footer {
+            padding: 3rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+        .footer-ascii {
+            font-size: 0.8rem;
+            color: var(--text-dimmer);
+            margin-bottom: 1.5rem;
+            line-height: 1.4;
+        }
+        .footer-links {
+            display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        .footer-links a { color: var(--text-dim); text-decoration: none; font-size: 0.82rem; transition: color 0.15s; }
+        .footer-links a:hover { color: var(--green); }
+        .footer-copy { font-size: 0.72rem; color: var(--text-dimmer); }
+
+        /* ANIMATIONS */
+        @keyframes fadeIn { to { opacity: 1; } }
+        .reveal {
+            opacity: 0; transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            nav { padding: 0.75rem 1.25rem; }
+            .nav-links { display: none; }
+            .nav-links.open {
+                display: flex; flex-direction: column;
+                position: absolute; top: 100%; left: 0; right: 0;
+                background: rgba(10,10,10,0.97);
+                padding: 1rem 1.5rem; gap: 0.75rem;
+                border-bottom: 1px solid var(--border);
+            }
+            .nav-toggle { display: block; }
+            .hero { padding: 5rem 1.25rem 3rem; min-height: auto; }
+            section { padding: 3rem 1.25rem; }
+            .exp-header { flex-direction: column; }
+            .speak-table .col-type { width: 80px; }
+            .edu-block { flex-direction: column; gap: 0.5rem; }
+            .extras { grid-template-columns: 1fr; gap: 2rem; }
+        }
+
+        /* PRINT STYLES */
+        @media print {
+            body::after { display: none; }
+            nav, .nav-toggle, .hero-actions { display: none; }
+            .hero { min-height: auto; padding: 2rem 0 1rem; }
+            section { padding: 2rem 0; page-break-inside: avoid; }
+            .exp-item { page-break-inside: avoid; }
+            .reveal { opacity: 1 !important; transform: none !important; }
+            body { background: white; color: black; }
+            .hero h1, .exp-company, .btn-green { color: #2d7a4f; }
+            .exp-tag { background: #e8f5e9; color: #2d7a4f; }
+            a { color: inherit; text-decoration: none; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span class="nav-logo"></span>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">[ = ]</button>
+        <ul class="nav-links">
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#speaking">speaking</a></li>
+            <li><a href="#education">education</a></li>
+            <li><a href="#certs">certs</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-prompt">$ whoami</div>
+            <h1></h1>
+            <p class="hero-bio"></p>
+            <div class="hero-info"></div>
+            <div class="hero-actions"></div>
+        </div>
+    </header>
+
+    <section id="experience">
+        <div class="section-head reveal"><h2 data-num="01">Experience</h2></div>
+    </section>
+
+    <section id="speaking">
+        <div class="section-head reveal"><h2 data-num="02">Speaking</h2></div>
+        <table class="speak-table reveal"></table>
+    </section>
+
+    <section id="education">
+        <div class="section-head reveal"><h2 data-num="03">Education</h2></div>
+    </section>
+
+    <section id="certs">
+        <div class="section-head reveal"><h2 data-num="04">Certifications</h2></div>
+    </section>
+
+    <section>
+        <div class="extras reveal"></div>
+    </section>
+
+    <footer>
+        <div class="footer-ascii"></div>
+        <div class="footer-links"></div>
+        <div class="footer-copy"></div>
+    </footer>
+
+    <script>
+        // Mobile nav toggle
+        document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open')));
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
