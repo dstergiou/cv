@@ -61,7 +61,7 @@ Simply open `index.html` in your browser. The JavaScript will automatically load
 1. Commit all files to your repository
 2. Go to Settings → Pages
 3. Select your branch (usually `main`)
-4. Your site will be available at `https://yourusername.github.io/repository-name/`
+4. Your site will be available at `https://dstergiou.github.io/cv/`
 
 ## Design Modifications
 
