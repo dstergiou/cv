@@ -25,17 +25,17 @@
       "companyContext": "International money transfer fintech operating in 50+ countries",
       "role": "CISO & Director of Corporate IT",
       "location": "Stockholm, Sweden · Remote",
-      "period": "Dec 2023 — Present",
+      "period": "Dec 2023 - Present",
       "achievements": [
         "Direct report to COO, providing quarterly Board briefings on cyber risk, compliance, and security strategy",
-        "Achieved SOC 2, PCI DSS, ISO 27001, and DORA compliance — unlocking business customer segment and enabling regulatory expansion — all on time, zero audit observations",
-        "Accountable for $2M+ annual security, IT, and technology vendor spend across 20+ strategic suppliers — EDR, identity (Okta), GRC (Vanta), application security (Snyk), and enterprise AI (Claude, OpenAI)",
-        "Built and led Corporate IT and Security function from scratch for 300+ employees and 600+ contractors across 50+ countries — 98+ NPS with a 2-person team",
-        "Delivered commercial outcomes through security — faster enterprise customer reviews, new market entry, and compliance-gated product launches",
+        "Achieved SOC 2, PCI DSS, ISO 27001, and DORA compliance - unlocking business customer segment and enabling regulatory expansion - all on time, zero audit observations",
+        "Accountable for $2M+ annual security, IT, and technology vendor spend across 20+ strategic suppliers - EDR, identity (Okta), GRC (Vanta), application security (Snyk), and enterprise AI (Claude, OpenAI)",
+        "Built and led Corporate IT and Security function from scratch for 300+ employees and 600+ contractors across 50+ countries - 98+ NPS with a 2-person team",
+        "Delivered commercial outcomes through security - faster enterprise customer reviews, new market entry, and compliance-gated product launches",
         "Reduced cyber insurance premiums by 20% through robust security controls and zero-breach record",
-        "Built third-party risk program from scratch — 130+ vendor assessments, DPAs, and ongoing monitoring",
-        "Supported enterprise sales through security due diligence — customer questionnaires, audit responses, trust documentation",
-        "Established AI security and governance program for enterprise LLM use (Claude, OpenAI) — data classification, acceptable use, tooling oversight"
+        "Built third-party risk program from scratch - 130+ vendor assessments, DPAs, and ongoing monitoring",
+        "Supported enterprise sales through security due diligence - customer questionnaires, audit responses, trust documentation",
+        "Established AI security and governance program for enterprise LLM use (Claude, OpenAI) - data classification, acceptable use, tooling oversight"
       ],
       "keyDomains": "Security Strategy · Corporate IT · Risk Management · Incident Response · DevSecOps · BCP/DR · Compliance (SOC 2, PCI DSS, ISO 27001, DORA, GDPR) · Vendor Risk · AI Governance",
       "scope": [
@@ -67,7 +67,7 @@
       "companyContext": "Revenue-based financing fintech, $150M+ raised, serving e-commerce businesses globally",
       "role": "Director of Information Security",
       "location": "Stockholm, Sweden · Remote",
-      "period": "Sep 2022 — Dec 2023",
+      "period": "Sep 2022 - Dec 2023",
       "achievements": [
         "Achieved first SOC 2 attestation, establishing trust framework for investors and enterprise customers",
         "Implemented zero-trust security architecture with MFA across all systems and SSO/SCIM integration",
@@ -98,13 +98,13 @@
       "companyContext": "Leading European open banking payment provider operating in 30+ countries",
       "role": "Group CISO",
       "location": "Stockholm, Sweden · Hybrid",
-      "period": "Aug 2018 — Aug 2022",
+      "period": "Aug 2018 - Aug 2022",
       "achievements": [
         "Reported to Audit Committee and executive team on cyber risk and compliance posture",
         "Engaged directly with Finansinspektionen and EU payment regulators on PSD2 and cyber risk",
-        "Achieved ISO 27001 and ISO 27701 certification across all EU operations — PSD2-licensed, Finansinspektionen-regulated",
-        "Owned security posture across the European open banking ecosystem — partner banks, payment networks, and customer-facing services",
-        "Led M&A security due diligence and integration for acquisitions — risk assessment, gap analysis, post-deal alignment",
+        "Achieved ISO 27001 and ISO 27701 certification across all EU operations - PSD2-licensed, Finansinspektionen-regulated",
+        "Owned security posture across the European open banking ecosystem - partner banks, payment networks, and customer-facing services",
+        "Led M&A security due diligence and integration for acquisitions - risk assessment, gap analysis, post-deal alignment",
         "Built Security Champions and IT Security Coordinator networks across 30+ countries"
       ],
       "keyDomains": "Security Strategy · Risk Management · Incident Response · DevSecOps · Compliance (ISO 27001, ISO 27701, GDPR, PSD2) · Vendor Risk · M&A Security · Regulator Engagement · Team Leadership",
@@ -134,7 +134,7 @@
       "companyContext": "Publicly traded media and entertainment conglomerate with 30+ subsidiaries",
       "role": "Group CISO",
       "location": "Stockholm, Sweden",
-      "period": "Feb 2017 — Aug 2018",
+      "period": "Feb 2017 - Aug 2018",
       "achievements": [
         "Zero security incidents over 18 months across 30+ subsidiaries and multiple indirect reports",
         "Conducted CMMC-based maturity assessment across 30+ subsidiaries and created tailored security programs for each",
@@ -163,14 +163,14 @@
       "companyContext": "Leading B2B online gaming provider, publicly traded (acquired by Evolution Gaming)",
       "role": "CISO",
       "location": "Stockholm, Sweden",
-      "period": "Jan 2011 — Feb 2017",
+      "period": "Jan 2011 - Feb 2017",
       "achievements": [
         "Built and maintained ISO 27001 certification from scratch over 6-year tenure",
         "Passed 72+ regulatory audits across UKGC, AAMS, MGA, AGCC, and CCC at a publicly-traded gaming operator",
         "Zero major security incidents across entire 6-year tenure",
         "Briefed executive team on regulatory audit outcomes and risk across multi-jurisdiction gaming operations"
       ],
-      "keyDomains": "Security Strategy · Risk Management · DevSecOps · BCP/DR · Gaming Regulatory Audits (UKGC, AAMS, MGA, AGCC, CCC) · Compliance (ISO 27001, PCI DSS) · Team Leadership",
+      "keyDomains": "Security Strategy · Risk Management · DevSecOps · BCP/DR · Regulatory Audits (UKGC, AAMS, MGA, AGCC, CCC) · Compliance (ISO 27001, PCI DSS) · Team Leadership",
       "scope": [
         "Define and execute information security strategy and program",
         "Develop and operate information security risk management framework",
@@ -192,7 +192,7 @@
       "companyContext": "White-label online gaming platform provider",
       "role": "CISO",
       "location": "Stockholm, Sweden",
-      "period": "Feb 2009 — Nov 2010",
+      "period": "Feb 2009 - Nov 2010",
       "achievements": [
         "Defined information security strategy and managed security budget for online gaming platform",
         "Oversaw PCI DSS compliance and implemented SDLC across engineering teams"
@@ -215,7 +215,7 @@
       "companyContext": "Information security consulting firm serving telecom and banking sectors",
       "role": "Senior InfoSec Consultant",
       "location": "Athens, Greece",
-      "period": "Nov 2006 — Jan 2009",
+      "period": "Nov 2006 - Jan 2009",
       "achievements": [
         "Delivered security assessments for telecom operators and banking clients across critical infrastructure",
         "Designed enterprise security architectures and metrics frameworks"
@@ -241,7 +241,7 @@
       "companyContext": "Telecommunications equipment manufacturer with international operations",
       "role": "Senior Security Engineer",
       "location": "Athens, Greece",
-      "period": "Apr 1999 — Oct 2005",
+      "period": "Apr 1999 - Oct 2005",
       "achievements": [
         "Built enterprise security architecture and internet-facing services for a major telecom",
         "Product owner for Linux-based security solutions; PM for external customer InfoSec projects"
@@ -285,7 +285,7 @@
     {
       "year": "2021",
       "type": "Keynote",
-      "title": "Nordic IT Security — Financial Edition",
+      "title": "Nordic IT Security - Financial Edition",
       "subtitle": null
     },
     {
@@ -345,17 +345,17 @@
   ],
   "education": [
     {
-      "period": "2014 — 2019",
-      "degree": "MBA — Industrial Management & Economics",
+      "period": "2014 - 2019",
+      "degree": "MBA - Industrial Management & Economics",
       "institution": "Blekinge Institute of Technology, Sweden"
     },
     {
-      "period": "2009 — 2013",
+      "period": "2009 - 2013",
       "degree": "MSc Information Security",
       "institution": "Luleå University of Technology, Sweden"
     },
     {
-      "period": "1994 — 1997",
+      "period": "1994 - 1997",
       "degree": "BSc Computer Studies",
       "institution": "University of Portsmouth, UK"
     }

@@ -11,9 +11,9 @@ async function loadCV() {
 
 function populateCV(data) {
     // Personal Info
-    document.title = `${data.personal.name} — ${data.personal.title}`;
+    document.title = `${data.personal.name} - ${data.personal.title}`;
     document.querySelector('meta[name="description"]').content =
-        `${data.personal.name} — ${data.personal.bio.replace(/<[^>]*>/g, '')}`;
+        `${data.personal.name} - ${data.personal.bio.replace(/<[^>]*>/g, '')}`;
 
     document.querySelector('.nav-logo').textContent = data.personal.name.split(' ')[0].toLowerCase();
     document.querySelector('.hero h1').innerHTML =
@@ -65,13 +65,13 @@ function populateCV(data) {
 
         const companyContext = exp.companyContext ? `<div class="exp-context">${exp.companyContext}</div>` : '';
         const keyDomainsBlock = exp.keyDomains
-            ? `<div class="exp-key-domains">${exp.keyDomains}</div>`
+            ? `<div class="exp-key-domains">${exp.keyDomains.split(' · ').map(d => `<span class="exp-tag">${d}</span>`).join('')}</div>`
             : '';
 
         expItem.innerHTML = `
             <div class="exp-header">
                 <div>
-                    <div class="exp-title"><span class="exp-company">${exp.company}</span> — ${exp.role}</div>
+                    <div class="exp-title"><span class="exp-company">${exp.company}</span> / ${exp.role}</div>
                     ${companyContext}
                     ${keyDomainsBlock}
                     <div class="exp-location">${exp.location}</div>
@@ -96,7 +96,7 @@ function populateCV(data) {
     data.speaking.forEach(talk => {
         const row = document.createElement('tr');
         const titleContent = talk.subtitle
-            ? `${talk.title} <span>— ${talk.subtitle}</span>`
+            ? `${talk.title} <span>- ${talk.subtitle}</span>`
             : talk.title;
 
         row.innerHTML = `
@@ -200,7 +200,7 @@ function populateCV(data) {
             <div>
                 <h3>Languages</h3>
                 <ul>
-                    ${data.languages.map(l => `<li>${l.language} <span>— ${l.level}</span></li>`).join('')}
+                    ${data.languages.map(l => `<li>${l.language} <span>- ${l.level}</span></li>`).join('')}
                 </ul>
             </div>
             <div>
