@@ -4,7 +4,7 @@
     "firstName": "Dimitrios",
     "lastName": "Stergiou",
     "title": "CISO",
-    "bio": "CISO with <span class=\"hl\">25+ years</span> delivering <span class=\"hl\">zero-breach security programs</span> across <span class=\"hl\">fintech</span> and <span class=\"hl\">payments</span>. Proven track record: <span class=\"hl\">SOC 2, PCI DSS, ISO 27001, DORA</span> compliance achieved on time with zero audit observations. I build security programs that <span class=\"hl\">survive audits and enable business growth</span>.",
+    "bio": "CISO with <span class=\"hl\">25+ years</span> building security programs across <span class=\"hl\">fintech</span> and <span class=\"hl\">payments</span>. Board-reporting executive owning <span class=\"hl\">$2M+ budgets</span> and security programs spanning <span class=\"hl\">50+ countries</span>. <span class=\"hl\">No material incidents</span> under leadership, 72+ audits passed, 4 frameworks shipped on schedule. I build security programs that <span class=\"hl\">survive audits and enable business growth</span>.",
     "location": "Stockholm, Sweden",
     "email": "dstergiou@gmail.com",
     "linkedin": "dstergiou",
@@ -12,25 +12,32 @@
     "cvPdf": "Dimitrios_Stergiou_CV.pdf"
   },
   "highlights": [
-    "Zero security breaches across 25+ year career spanning 8 organizations",
-    "72+ regulatory audits passed with zero major findings",
-    "Led GDPR compliance across 30+ companies throughout Europe",
-    "Achieved 4 compliance frameworks simultaneously (SOC 2, ISO 27001, PCI DSS, DORA) on schedule with zero observations"
+    "Quarterly Board briefings and Audit Committee reporting as CISO and Group CISO at fintech and listed companies",
+    "Accountable for $2M+ annual security, IT, and technology vendor spend",
+    "Functional accountability across security, risk, compliance, corporate IT, and resilience",
+    "Security and Corporate IT programs spanning 50+ countries",
+    "Regulatory engagement across DORA, PSD2, PCI DSS, ISO 27001, NESA, and gaming jurisdictions (UKGC, AAMS, MGA, AGCC, CCC)",
+    "No material incidents under leadership; 72+ regulatory audits passed; 4 frameworks shipped (SOC 2, ISO 27001, PCI DSS, DORA) on schedule"
   ],
   "experience": [
     {
-      "company": "TapTap Send",
+      "company": "Taptap Send",
       "companyContext": "International money transfer fintech operating in 50+ countries",
       "role": "CISO & Director of Corporate IT",
       "location": "Stockholm, Sweden · Remote",
       "period": "Dec 2023 — Present",
       "achievements": [
-        "Achieved SOC 2, PCI DSS, ISO 27001, and DORA compliance — unlocking business customer segment and enabling regulatory approvals — all on time, zero audit observations",
-        "Built corporate IT function from scratch for 300+ employees and 600+ contractors globally, maintaining 98+ NPS with lean 2-person team",
-        "Reduced cyber insurance premiums by 20% through implementation of robust security controls and zero-breach track record",
-        "Implemented zero-trust security architecture with MFA across all systems and SSO/SCIM where supported",
-        "Secured cloud-native AWS infrastructure and integrated DevSecOps into engineering workflow"
+        "Direct report to COO, providing quarterly Board briefings on cyber risk, compliance, and security strategy",
+        "Achieved SOC 2, PCI DSS, ISO 27001, and DORA compliance — unlocking business customer segment and enabling regulatory expansion — all on time, zero audit observations",
+        "Accountable for $2M+ annual security, IT, and technology vendor spend across 20+ strategic suppliers — EDR, identity (Okta), GRC (Vanta), application security (Snyk), and enterprise AI (Claude, OpenAI)",
+        "Built and led Corporate IT and Security function from scratch for 300+ employees and 600+ contractors across 50+ countries — 98+ NPS with a 2-person team",
+        "Delivered commercial outcomes through security — faster enterprise customer reviews, new market entry, and compliance-gated product launches",
+        "Reduced cyber insurance premiums by 20% through robust security controls and zero-breach record",
+        "Built third-party risk program from scratch — 130+ vendor assessments, DPAs, and ongoing monitoring",
+        "Supported enterprise sales through security due diligence — customer questionnaires, audit responses, trust documentation",
+        "Established AI security and governance program for enterprise LLM use (Claude, OpenAI) — data classification, acceptable use, tooling oversight"
       ],
+      "keyDomains": "Security Strategy · Corporate IT · Risk Management · Incident Response · DevSecOps · BCP/DR · Compliance (SOC 2, PCI DSS, ISO 27001, DORA, GDPR) · Vendor Risk · AI Governance",
       "scope": [
         "Define and execute information security strategy and program",
         "Manage Corporate IT department providing remote support across all global locations",
@@ -49,7 +56,10 @@
         "AWS",
         "DevSecOps",
         "Risk Management",
-        "GDPR"
+        "GDPR",
+        "Board Reporting",
+        "Vendor Risk Management",
+        "AI Governance"
       ]
     },
     {
@@ -65,6 +75,7 @@
         "Built and embedded information security policy framework from the ground up",
         "Managed team of 4 external security consultants alongside internal stakeholders"
       ],
+      "keyDomains": "Security Strategy · Risk Management · Incident Response · DevSecOps · Application Security · Compliance (SOC 2, PCI DSS, GDPR) · Vendor Risk",
       "scope": [
         "Define and execute information security strategy and program",
         "Develop and operate information security risk management framework",
@@ -89,10 +100,14 @@
       "location": "Stockholm, Sweden · Hybrid",
       "period": "Aug 2018 — Aug 2022",
       "achievements": [
-        "Achieved ISO 27001 and ISO 27701 certification across all EU operations",
-        "Established Security Champions and IT Security Coordinator networks across the organization",
-        "Led M&A security due diligence for acquisitions, ensuring professional risk assessment and integration"
+        "Reported to Audit Committee and executive team on cyber risk and compliance posture",
+        "Engaged directly with Finansinspektionen and EU payment regulators on PSD2 and cyber risk",
+        "Achieved ISO 27001 and ISO 27701 certification across all EU operations — PSD2-licensed, Finansinspektionen-regulated",
+        "Owned security posture across the European open banking ecosystem — partner banks, payment networks, and customer-facing services",
+        "Led M&A security due diligence and integration for acquisitions — risk assessment, gap analysis, post-deal alignment",
+        "Built Security Champions and IT Security Coordinator networks across 30+ countries"
       ],
+      "keyDomains": "Security Strategy · Risk Management · Incident Response · DevSecOps · Compliance (ISO 27001, ISO 27701, GDPR, PSD2) · Vendor Risk · M&A Security · Regulator Engagement · Team Leadership",
       "scope": [
         "Define and execute information security strategy and program",
         "Develop and operate information security risk management framework",
@@ -109,7 +124,9 @@
         "ISO 27701",
         "GDPR",
         "PSD2",
-        "M&A"
+        "M&A",
+        "Audit Committee",
+        "Regulatory Engagement"
       ]
     },
     {
@@ -124,6 +141,7 @@
         "Co-led Group-wide GDPR compliance project across 30+ companies in Europe with Privacy Champions network",
         "Established and mentored Security Champions network of 30+ professionals across all subsidiaries"
       ],
+      "keyDomains": "Security Strategy · Risk Management · DevSecOps · GDPR Compliance · Multi-subsidiary Governance · Security Champions Network · Executive Advisory",
       "scope": [
         "Define and execute information security strategy and program across 30+ subsidiaries",
         "Develop and operate information security risk management framework",
@@ -148,9 +166,11 @@
       "period": "Jan 2011 — Feb 2017",
       "achievements": [
         "Built and maintained ISO 27001 certification from scratch over 6-year tenure",
-        "Successfully passed 72+ regulatory audits across UKGC, AAMS, MGA, AGCC, and CCC with zero incidents or breaches",
-        "Zero major security incidents throughout entire 6-year tenure"
+        "Passed 72+ regulatory audits across UKGC, AAMS, MGA, AGCC, and CCC at a publicly-traded gaming operator",
+        "Zero major security incidents across entire 6-year tenure",
+        "Briefed executive team on regulatory audit outcomes and risk across multi-jurisdiction gaming operations"
       ],
+      "keyDomains": "Security Strategy · Risk Management · DevSecOps · BCP/DR · Gaming Regulatory Audits (UKGC, AAMS, MGA, AGCC, CCC) · Compliance (ISO 27001, PCI DSS) · Team Leadership",
       "scope": [
         "Define and execute information security strategy and program",
         "Develop and operate information security risk management framework",
@@ -177,6 +197,7 @@
         "Defined information security strategy and managed security budget for online gaming platform",
         "Oversaw PCI DSS compliance and implemented SDLC across engineering teams"
       ],
+      "keyDomains": "Security Strategy · Risk Management · DevSecOps · PCI DSS Compliance",
       "scope": [
         "Define and execute information security strategy and program",
         "Develop and operate information security risk management framework",
@@ -199,6 +220,7 @@
         "Delivered security assessments for telecom operators and banking clients across critical infrastructure",
         "Designed enterprise security architectures and metrics frameworks"
       ],
+      "keyDomains": "Penetration Testing · Vulnerability Assessment · ISO 27001 Assessments · Security Architecture · Social Engineering",
       "scope": [
         "Performing and supervising penetration testing assessments",
         "Performing and supervising vulnerability assessments",
@@ -224,6 +246,7 @@
         "Built enterprise security architecture and internet-facing services for a major telecom",
         "Product owner for Linux-based security solutions; PM for external customer InfoSec projects"
       ],
+      "keyDomains": "Enterprise Security Architecture · Infrastructure Security · Penetration Testing · Linux Security · Internet-facing Services",
       "scope": [
         "Design and implementation of internet-facing services (Web, DNS, Email, Directory Services)",
         "Responsible for enterprise information security architecture",
@@ -239,7 +262,14 @@
       ]
     }
   ],
+  "speakingIntro": "Regular speaker at security and privacy conferences across the Nordics and Europe.",
   "speaking": [
+    {
+      "year": "2026",
+      "type": "Panel",
+      "title": "Flipping the Org Chart: IT Should Report to Security",
+      "subtitle": "IT Security Insights"
+    },
     {
       "year": "2023",
       "type": "Panel",
@@ -387,6 +417,14 @@
       {
         "code": "OneTrust",
         "name": "Privacy Fellow"
+      },
+      {
+        "code": "OneTrust",
+        "name": "GRC Certified Professional"
+      },
+      {
+        "code": "OneTrust",
+        "name": "Certified Privacy Professional"
       }
     ]
   },
@@ -405,7 +443,9 @@
     }
   ],
   "skills": {
-    "compliance": ["ISO 27001", "ISO 27701", "ISO 31000", "PCI DSS", "SOC 2", "DORA", "GDPR", "PSD2", "Gaming Regulations (UKGC, AAMS, MGA, AGCC, CCC)"],
+    "compliance": ["ISO 27001", "ISO 27018", "ISO 27701", "ISO 31000", "ISO 42001", "PCI DSS", "SOC 2", "DORA", "PSD2", "23 NYCRR Part 500", "UAE IAS (NESA)", "Gaming Regulations (UKGC, AAMS, MGA, AGCC, CCC)"],
+    "privacy": ["GDPR", "Data Privacy Impact Assessments", "Technical and Organizational Controls"],
+    "ai": ["AI Governance", "AI Risk Management", "NIST AI RMF", "EU AI Act", "LLM Security", "Enterprise LLM Deployment (Claude, OpenAI)"],
     "cloud": ["AWS", "GCP", "Cloud Security", "Infrastructure Security", "Network Security"],
     "operations": ["Penetration Testing", "Vulnerability Assessment & Management", "Incident Management & Response", "Security Audits & IT Assessments", "Security Architecture Design", "IT Security Operations"],
     "grc": ["Enterprise Risk Management", "Information Security Governance", "Security Policy Development", "Compliance Management", "IT Audit"],

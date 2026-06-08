@@ -62,24 +62,23 @@ function populateCV(data) {
         expItem.className = 'exp-item reveal';
 
         const achievementsList = exp.achievements.map(a => `<li>${a}</li>`).join('');
-        const scopeList = exp.scope.map(s => `<li>${s}</li>`).join('');
-        const tags = exp.tags.map(t => `<span class="exp-tag">${t}</span>`).join('');
 
         const companyContext = exp.companyContext ? `<div class="exp-context">${exp.companyContext}</div>` : '';
+        const keyDomainsBlock = exp.keyDomains
+            ? `<div class="exp-key-domains">${exp.keyDomains}</div>`
+            : '';
 
         expItem.innerHTML = `
             <div class="exp-header">
                 <div>
                     <div class="exp-title"><span class="exp-company">${exp.company}</span> — ${exp.role}</div>
                     ${companyContext}
+                    ${keyDomainsBlock}
                     <div class="exp-location">${exp.location}</div>
                 </div>
                 <div class="exp-period">${exp.period}</div>
             </div>
             <ul class="exp-achievements">${achievementsList}</ul>
-            <div class="exp-scope-label">scope:</div>
-            <ul class="exp-scope">${scopeList}</ul>
-            <div class="exp-stack">${tags}</div>
         `;
 
         expContainer.appendChild(expItem);
@@ -88,6 +87,11 @@ function populateCV(data) {
     expSection.appendChild(expContainer);
 
     // Speaking
+    const speakIntro = document.querySelector('.speak-intro');
+    if (speakIntro && data.speakingIntro) {
+        speakIntro.textContent = data.speakingIntro;
+    }
+
     const speakTable = document.querySelector('.speak-table');
     data.speaking.forEach(talk => {
         const row = document.createElement('tr');
@@ -149,6 +153,14 @@ function populateCV(data) {
             <div>
                 <h3>Compliance & Regulatory</h3>
                 <div class="skill-tags">${data.skills.compliance.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
+            </div>
+            <div>
+                <h3>Privacy</h3>
+                <div class="skill-tags">${data.skills.privacy.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
+            </div>
+            <div>
+                <h3>AI Security & Governance</h3>
+                <div class="skill-tags">${data.skills.ai.map(s => `<span class="skill-tag">${s}</span>`).join('')}</div>
             </div>
             <div>
                 <h3>Cloud & Infrastructure</h3>

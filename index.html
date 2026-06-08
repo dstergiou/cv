@@ -216,7 +216,7 @@
         }
 
         .highlights-box::before {
-            content: 'CAREER HIGHLIGHTS';
+            content: 'EXECUTIVE SCOPE';
             position: absolute;
             top: -0.7rem;
             left: 1.5rem;
@@ -284,6 +284,10 @@
             flex-wrap: wrap;
             gap: 0.5rem;
             margin-bottom: 1rem;
+        }
+        .exp-header > div:first-child {
+            flex: 1;
+            min-width: 0;
         }
 
         .exp-title {
@@ -360,6 +364,20 @@
             left: 0.65rem;
             color: var(--text-dimmer);
             font-weight: 700;
+        }
+
+        .exp-key-domains {
+            font-size: 0.82rem;
+            color: var(--text-dim);
+            line-height: 1.65;
+            margin-top: 0.4rem;
+        }
+
+        .speak-intro {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
         }
 
         .exp-stack {
@@ -603,7 +621,7 @@
             /* General text visibility */
             .exp-title, .exp-location, .exp-period { color: #000 !important; }
             .exp-context { color: #666 !important; font-style: italic !important; }
-            .exp-achievements li, .exp-scope li { color: #333 !important; }
+            .exp-achievements li, .exp-scope li, .exp-key-domains { color: #333 !important; }
             .edu-title, .edu-sub, .edu-year { color: #000 !important; }
             .cert-label { color: #666 !important; }
 
@@ -656,6 +674,7 @@
 
     <section id="speaking">
         <div class="section-head reveal"><h2 data-num="02">Speaking</h2></div>
+        <p class="speak-intro reveal"></p>
         <table class="speak-table reveal"></table>
     </section>
 
