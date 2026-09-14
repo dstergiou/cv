@@ -140,6 +140,10 @@ function populateCV(data) {
     const privacySection = createCertSection('Privacy', data.certifications.privacy);
     certContainer.appendChild(privacySection);
 
+    // AI
+    const aiSection = createCertSection('AI', data.certifications.ai);
+    certContainer.appendChild(aiSection);
+
     // Frameworks
     const frameworksSection = createCertSection('Frameworks & Vendor', data.certifications.frameworks);
     certContainer.appendChild(frameworksSection);

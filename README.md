@@ -22,7 +22,7 @@ To update your CV content, **edit `data.json`** only. You never need to touch th
 - **Experience**: companies, roles, achievements, scope, tags
 - **Speaking**: conferences and talks
 - **Education**: degrees and institutions
-- **Certifications**: security, privacy, and framework certifications
+- **Certifications**: security, privacy, AI, and framework certifications
 - **Languages**: proficiency levels
 - **Memberships**: professional organizations
 - **Footer**: tagline and copyright

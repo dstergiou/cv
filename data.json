@@ -405,6 +405,12 @@
         "name": null
       }
     ],
+    "ai": [
+      {
+        "code": "AAISM",
+        "name": null
+      }
+    ],
     "frameworks": [
       {
         "code": "Fireblocks",
