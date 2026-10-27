@@ -37,7 +37,6 @@
         "Designed digital asset custody security for the stablecoin business: MPC wallet governance, approval quorums, and tested key-recovery procedures",
         "Run annual incident response, disaster recovery, and business continuity exercises with regulator-ready documentation",
         "Reduced cyber insurance premiums by 20% through strengthened security controls",
-        "Removed 47,000+ public file-sharing links and enforced organization-wide external-sharing controls; centralized SaaS access through SSO and automated provisioning",
         "Built the third-party risk program: 150+ vendor assessments, DPAs, and ongoing monitoring; security due diligence for enterprise customers and partners",
         "Established AI security and governance for a 300-user enterprise LLM deployment: acceptable use, data classification, spend controls, and a governed platform for deploying AI-built internal apps behind SSO"
       ],
